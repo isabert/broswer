@@ -1,0 +1,51 @@
+body{
+    background-color:darkslateblue;
+}
+span{
+    font-size:1em;
+}
+button{
+    padding:0;
+    border:0;
+}
+svg{
+    height:100%;
+    width:100%;
+}
+.topbar{
+    background-color: thistle;
+    height:2em;
+    display:flex;
+    align-items: flex-end;
+}
+.win-tabs{
+    height:2em;
+    display:flex;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+}
+.win-tabs .win-tab{
+    background-color: whitesmoke;
+    display:flex;
+    justify-content: flex-start;
+    flex: 1 1 0;
+    max-width: 10em;
+    min-width: 5em
+}
+.win-tab span{
+    flex:1 1 auto;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.win-tab button{
+    flex: 0 0 2em;
+}
+.win-sizes{
+    height:2em;
+    flex:0 0 auto;
+    margin-left: 5em;
+    display:flex;
+    justify-content:flex-end;
+    flex: 0 0 8em
+}
