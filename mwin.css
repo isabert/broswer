@@ -1,5 +1,8 @@
 body{
+    font-family: 'Segoe UI', 'Ubuntu', 'Helvetica Neue', sans-serif; 
+    font-size: 16px;
     background-color:darkslateblue;
+    margin: 0
 }
 span{
     font-size:1em;
@@ -12,11 +15,11 @@ svg{
     height:100%;
     width:100%;
 }
-.topbar{
+.topbar, .secondbar{
     background-color: thistle;
     height:2em;
     display:flex;
-    align-items: flex-end;
+    justify-content: flex-start;
 }
 .win-tabs{
     height:2em;
@@ -32,20 +35,48 @@ svg{
     max-width: 10em;
     min-width: 5em
 }
+
+.win-tabs button, .win-tab button, .search-bar button{
+    flex:0 0 2em;
+}
+
 .win-tab span{
     flex:1 1 auto;
     white-space: nowrap;
     overflow:hidden;
     text-overflow: ellipsis;
 }
-.win-tab button{
-    flex: 0 0 2em;
-}
+
 .win-sizes{
     height:2em;
-    flex:0 0 auto;
-    margin-left: 5em;
     display:flex;
+    margin-left: 5em;
     justify-content:flex-end;
     flex: 0 0 8em
+}
+.left-control{
+    height:2em;
+    display:flex;
+    justify-content: flex-start;
+    flex: 0 0 8em
+}
+.right-control{
+    height:2em;
+    display:flex;
+    justify-content:flex-end;
+    flex: 0 0 10em
+}
+
+.search-bar{
+    flex:1 1 auto;
+    margin-left: 5em;
+    margin-right:5em;
+    display:flex;
+    justify-content: center;
+    height: 2em;
+}
+
+.search-bar input{
+    flex: 1 1 auto;
+    min-width:30em;
 }
